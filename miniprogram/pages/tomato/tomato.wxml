@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="timer-main">
+  <view class="timer" >
+      <view style="margin: 0 auto; text-align: center; width: 500rpx;height: 500rpx; line-height: 500rpx;border-radius: 500rpx; border: 2rpx solid #ffffff; color: #ffffff; font-size: 65rpx; font-weight: bold;">
+        {{ date }}
+      </view>
+  </view>
+  <view class="audio">
+    
+    <image wx:if="{{audioState}}" src='../../images/icon/shengyin.png' bindtap='stop'></image>
+    <image wx:else src='../../images/icon/shengyinguanbi.png' bindtap='play'></image>
+  </view>
+</view>
+<view class="buttons"> 
+    <button wx:if="{{isRunning}}" bindtap="pause" >暂停计时</button>
+    <button wx:else  bindtap="continue">继续计时</button>
+    <button bindtap="giveUp">放弃</button>
+</view>

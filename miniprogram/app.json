@@ -1,0 +1,56 @@
+{
+    "pages": [
+        "pages/task/task",
+        "pages/index/index",
+        "pages/userConsole/userConsole",
+        "pages/storageConsole/storageConsole",
+        "pages/databaseGuide/databaseGuide",
+        "pages/addFunction/addFunction",
+        "pages/deployFunctions/deployFunctions",
+        "pages/chooseLib/chooseLib",
+        "pages/detail/detail",
+        "pages/openapi/openapi",
+       
+        "pages/tomato/tomato",
+        "pages/my/my",
+        "pages/timeSet/timeSet",
+        "pages/timeSet/statis/statis",
+        "pages/about/about"
+
+    ],
+    "window": {
+        "backgroundColor": "#0099EE",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0099EE",
+        "navigationBarTitleText": "任务管理清单",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "selectedColor":"#0099ee",
+        "list": [
+            
+            {
+                "pagePath": "pages/task/task",
+                "text": "计时",
+                "iconPath": "images/icon/clock.png",
+                "selectedIconPath": "images/icon/clock1.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "待办",
+                "iconPath": "images/calendar.png",
+                "selectedIconPath": "images/calendar1.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/ic_action_user_normal.png",
+                "selectedIconPath": "images/ic_action_user_selected.png"
+            }
+        ]
+    },
+    "plugins": {
+
+    },
+    "sitemapLocation": "sitemap.json"
+}

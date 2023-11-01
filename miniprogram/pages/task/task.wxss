@@ -1,0 +1,76 @@
+.title {
+  padding: 20px 40px;
+  font-size: 32rpx;
+  color: block;
+  text-align: center;
+}
+.title text {
+  font-size: 28rpx;
+  color: #888888;
+  display: block;
+}
+.choose {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.choose .tasks {
+  width: 33.3%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #888888;
+  height: 150rpx;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.choose .tasks image {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+}
+.strat {
+  padding: 40px;
+  margin-top: 60rpx;
+}
+.strat button {
+  width: 400rpx;
+  height: 100rpx;
+  border-radius: 25px;
+  border: 1px solid #041663;
+  color: #041663;
+  background-color: white;
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+.Tab {
+  border-bottom: 1px solid gray;
+  color: black;
+}
+.setting {
+  margin: 0 auto;
+  max-width: 650rpx;
+}
+.section__title {
+  text-align: center;
+}
+.count {
+  display: flex;
+  flex: 2;
+  height: 100px;
+  background-color: white;
+}
+.count .today-count {
+  margin-top: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  flex: 1;
+  color: #808080;
+}
+.count .today-count text {
+  font-size: 48rpx;
+  color: red;
+}

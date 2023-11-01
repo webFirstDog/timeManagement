@@ -1,0 +1,35 @@
+<view class="title">
+    选择一个任务
+    <text>在接下来的时间里，专注做这件事</text>
+</view>
+<view class="choose">
+    <view class="tasks {{TabIndex == index ?'Tab':''}}" wx:for="{{tasks}}" wx:key="index" data-index="{{index}}"  bindtap="Tab" >
+        <image src="{{item.url}}" />
+            {{item.name}}
+    </view>
+</view>
+<view class="setting">
+    <view class="section">
+        <view class="section__title"><text>任务时长(分钟)</text></view>
+        <view class="body-view">
+            <slider bindchange="sliderTask" min="1" max="120" show-value value="{{taskTime}}" />
+        </view>
+    </view>
+</view>
+<view class="strat">
+    <button bindtap="start">开始计时</button>
+</view>
+<view class="count">
+    <view class="today-count" bindtap="lcStatis">
+        今日次数
+        <text>
+            {{Num}}
+        </text>
+    </view>
+    <view class="today-count">
+        累计时间
+        <text>
+            {{allNum}}min
+        </text>    
+    </view>
+</view>
